@@ -2,7 +2,7 @@
 title: Solian
 description: Solian（索链）是由 Flutter 编写的全平台支持官方客户端。
 published: true
-date: 2024-06-29T17:19:50.791Z
+date: 2024-07-14T06:03:46.076Z
 tags: solar network, solian
 editor: markdown
 dateCreated: 2024-06-29T16:12:53.290Z
@@ -21,6 +21,8 @@ Solian 是由 Flutter 编写的全平台 Solar Network 客户端，也是我们�
 1. 官方仓库发布的正式版本 https://git.solsynth.dev/Hydrogen/Solian/releases
 2. 官方文件托管柜发布的测试版本 https://files.solsynth.dev/media01/package/solian
 3. 官方 TestFlight (iOS 与少量 macOS) https://testflight.apple.com/join/YJ0lmN6O
+
+<img width="128" height="128" alt="testflight qrcode" src="/testflight_qrcode.png">
 
 Windows 版本系免安装版本，放置于一个您熟悉的目录即可使用。  
 Web 版本同时支持 PWA 渐进式网页应用，可以替代一部分桌面端使用。
