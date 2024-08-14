@@ -2,7 +2,7 @@
 title: 贴图及贴图包
 description: Stickers, Emotes 和 Emoji
 published: true
-date: 2024-08-14T03:05:37.005Z
+date: 2024-08-14T03:25:35.280Z
 tags: solar network
 editor: markdown
 dateCreated: 2024-08-14T02:48:10.120Z
@@ -39,3 +39,9 @@ Authorization: Bearer <your token here>
 登陆账号后，在账户页面可以找到一个「贴图」入口，点进去即可看到刚刚创建的贴图包，若没有数据，请检查自己的贴图包创建是否成功。
 
 点击页面下方的加号按钮，完成内容表单，贴图包序号填写上文的 `"id"` 字段。别名需要遵守 CamelCase 规则为最佳。
+
+## 使用
+
+使用贴图，需要在你的内容中键入一个文字占位符，具体的组成为 `:<pack prefix><sticker alias>:`。例如一个贴图包的前缀（`prefix`）为 `solar`，一个该贴图包的的贴图别名（`alias`）为 `Hello`，组成出来的占位符为 `:solarHello:`
+
+不过不明白也别担心，大多数情况我们都有自动提示。只需在 Solian 内文本框键入一个英文冒号，再开始键入占位符的一部分即可。
