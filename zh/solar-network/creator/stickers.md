@@ -2,7 +2,7 @@
 title: 贴图及贴图包
 description: Stickers, Emotes 和 Emoji
 published: true
-date: 2024-08-14T03:25:35.280Z
+date: 2024-08-14T03:32:14.049Z
 tags: solar network
 editor: markdown
 dateCreated: 2024-08-14T02:48:10.120Z
@@ -32,7 +32,7 @@ Authorization: Bearer <your token here>
 
 ## 贴图
 
-贴图的创建，你首先需要准备内容。建议为一个 256x256 像素大小的 PNG 或 GIF 图片，透明背景或内容背景均可，但请不要使用纯色填充。大面积的白色填充可能会给暗色模式的用户带来闪光弹。
+贴图的创建，你首先需要准备内容。建议为一个 512x512 像素大小（最小为 128x128 的大小，否则可能造成效果不佳）的 PNG 或 GIF 图片，透明背景或内容背景均可，但请不要使用纯色填充。大面积的白色填充可能会给暗色模式的用户带来闪光弹。
 
 之后，请下载安装 Solian 或使用网页版，具体请转到 [Solian 介绍页面](/zh/solar-network/solian)。
 
@@ -45,3 +45,11 @@ Authorization: Bearer <your token here>
 使用贴图，需要在你的内容中键入一个文字占位符，具体的组成为 `:<pack prefix><sticker alias>:`。例如一个贴图包的前缀（`prefix`）为 `solar`，一个该贴图包的的贴图别名（`alias`）为 `Hello`，组成出来的占位符为 `:solarHello:`
 
 不过不明白也别担心，大多数情况我们都有自动提示。只需在 Solian 内文本框键入一个英文冒号，再开始键入占位符的一部分即可。
+
+### 大小变化
+
+在 Solar Network 中，你可能看到大小不同的贴图，这是因为 Smart Resize 在背后发功。具体规则如下。
+
+1. 当仅有一个贴图，将使用 128x128 的大小
+2. 当有三个及一下的题图，将使用 32x32 的大小
+3. 当有三个以上的贴图，或贴图夹杂在文本内时，将使用 20x20 的大小
