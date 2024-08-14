@@ -2,7 +2,7 @@
 title: 贴图及贴图包
 description: Stickers, Emotes 和 Emoji
 published: true
-date: 2024-08-14T03:32:14.049Z
+date: 2024-08-14T03:54:15.435Z
 tags: solar network
 editor: markdown
 dateCreated: 2024-08-14T02:48:10.120Z
@@ -53,3 +53,10 @@ Authorization: Bearer <your token here>
 1. 当仅有一个贴图，将使用 128x128 的大小
 2. 当有三个及一下的题图，将使用 32x32 的大小
 3. 当有三个以上的贴图，或贴图夹杂在文本内时，将使用 20x20 的大小
+
+## FAQ
+
+以下是一些常见问题及解决方案。
+
+Q1: 我创建了贴图，但是发出来对方没有显示\
+A1: 贴图资料的加载是在开屏阶段完成，后续只有在退出贴图管理界面时才会二次刷新，尝试重新启动，如果还是无效，检查贴图时候创建成功
