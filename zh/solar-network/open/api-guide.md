@@ -2,7 +2,7 @@
 title: API 准则
 description: 在设计 Solar Network 服务 API 时惯用的准则
 published: true
-date: 2024-08-18T05:46:02.121Z
+date: 2024-08-18T05:59:25.471Z
 tags: solar network
 editor: markdown
 dateCreated: 2024-08-18T05:46:02.121Z
@@ -57,4 +57,19 @@ dateCreated: 2024-08-18T05:46:02.121Z
 
 如果响应不是 `2xx` 的状态码，一般我们都不会返回 `application/json` 的数据，而是一个 `plain/text`，一行简单的文字来代表你犯了什么错。
 
-如果你是英语白痴，遇到报错别老来问我们，用用翻译好吗？不然我们写报错信息干嘛。
+> 如果你是英语白痴，遇到报错别老来问我们，用用翻译好吗？不然我们写报错信息干嘛。
+{.is-warning}
+
+## 超级网关
+
+超级网关指的是我们的 [Hydrogen.Dealer](https://git.solsynth.dev/Hydrogen/Dealer)，一般情况下你都不会直接访问我们的服务，都是走 Dealer 的网关转发的。虽然我们也不知道为什么写了个这个东西。
+
+我们 API 的地址为 `api.sn.solsynth.dev`，怎么用呢？很简单。访问 `/cgi/<service name>` 即可，这样的地址会被转发到对应服务的 `/api` 端点。新版本我们还给这些服务加了点别名，这样你的 URL 可以变得更好看点。
+
+- `/cgi/id` 或 `/cgi/auth` —— 授权服务 [Hydrogen.Passport](https://git.solsynth.dev/Hydrogen/Passport)
+- `/cgi/uc` 或 `/cgi/files` —— 附件服务 [Hydrogen.Paperclip](https://git.solsynth.dev/Hydrogen/Paperclip)
+- `/cgi/co` 或 `/cgi/interactive` —— 帖子服务 [Hydrogen.Interactive](https://git.solsynth.dev/Hydrogen/Interactive)
+- `/cgi/im` 或 `/cgi/messaging` —— 聊天服务 [Hydrogen.Messaging](https://git.solsynth.dev/Hydrogen/Messaging)
+
+> 冷知识：你可能注意到了我们新配置的别名其实就是之前没有超级网关时他们使用的子域名。
+{.is-info}
