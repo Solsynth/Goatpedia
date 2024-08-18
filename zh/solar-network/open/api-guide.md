@@ -2,7 +2,7 @@
 title: API 准则
 description: 在设计 Solar Network 服务 API 时惯用的准则
 published: true
-date: 2024-08-18T05:59:25.471Z
+date: 2024-08-18T06:09:43.814Z
 tags: solar network
 editor: markdown
 dateCreated: 2024-08-18T05:46:02.121Z
@@ -52,6 +52,7 @@ dateCreated: 2024-08-18T05:46:02.121Z
 - `400` 请求参数错误 —— 看文档，核查请求体
 - `404` 数据不存在或是接口路径不对
 - `403` 没有权限
+- `401` 需要授权 —— 需要授权的 API 但你没有提供 API 令牌
 - `200` 成功
 - `204` 无内容 —— 常见于删除 *虽然后时候写 API 会忘记删除内容时改成这个*
 
