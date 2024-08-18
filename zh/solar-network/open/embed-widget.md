@@ -2,7 +2,7 @@
 title: 嵌入式组件
 description: 使用 iFrame 将 Solar Network 上的内容嵌入到你的网页内
 published: true
-date: 2024-08-16T18:04:07.836Z
+date: 2024-08-18T05:51:05.497Z
 tags: solar network, project open
 editor: markdown
 dateCreated: 2024-08-16T17:51:27.720Z
@@ -37,7 +37,7 @@ dateCreated: 2024-08-16T17:51:27.720Z
 
 所有帖子列表组件都支持以下选项，你可以在浏览器内尝试一下。
 
-### 不显示开头区域
+#### 不显示开头区域
 
 添加参数 `no-title=1`（任意值均可）
 
@@ -47,7 +47,7 @@ dateCreated: 2024-08-16T17:51:27.720Z
 <iframe src="https://solsynth.dev/embed/posts?no-title=1" width="480" height="640" frameborder="0" style="border:none"></iframe>
 ```
 
-### 自定义标题显示
+#### 自定义标题显示
 
 添加参数 `title` 与 `caption`
 
