@@ -20,6 +20,22 @@ Solar Network 是 Solsynth 的开源社交网络项目。
 - 阅读英语：尽管 Solar Network 大部份都具有本地化，但是大多数服务器返回的报错都是英语的，您可以使用翻译尝试阅读，或是在文档中查询解决方案。最后再前往官方的聊天频道或者 GitHub 反馈问题。
 - 反馈问题：你可已在我们的的 GitHub 主仓库反馈问题，在创建新 Issue 前请搜索以确保没有其他人已经反馈了相关的问题并且已被解决。
 
+#### 名称相关
+
+Solar Network 指的是 Solsynth 官方由其开发的
+DysonNetwork 和 Island 等一系列 DysonNetwork 生态系统软件所驱动的社交媒体平台。
+
+Solian 是 DysonNetwork 目前最主要的前端项目 Island 的公开名称。虽然二者的缩写都是 SN，
+但是一般来讲，SN 的缩写指代 Solar Network 的情况比较多。
+
+Solar Network 的组成部份许多，还请您正确使用对应的名称。
+
+!!! warning
+
+    Solar Network 和 Solian 是 Solsynth 的产品名称。其不应该在任何和 SN 无关的三方场景使用，
+    比如你自行使用 DysonNetwork 架设的 DN 实例不能被称为 DN，第三方 Solar Network 客户端或者经过非官方修改的 Island
+    也不能称为 Solian。同时也不能使用官方的图标和素材等。详见 Solsynth/Solian 仓库 README
+
 ### 开始使用
 
 Solar Network 的官方客户端支持绝大部分平台，
